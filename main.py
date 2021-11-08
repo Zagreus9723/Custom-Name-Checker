@@ -43,4 +43,4 @@ if os.path.exists(file):
     else:
         print("Wrong number!")
 else:
-    print(f"Please create and add to {file}")
+    print(f"Please create and add words or links to {file}.")
