@@ -18,7 +18,7 @@ if os.path.exists(file):
             for x in codes:
                 driver.get(f"{x}")
                 e = driver.title
-                if driver.title.lower() == response:
+                if f"{response} in f"{driver.title.lower()}":
                     r = open('valid.txt', 'a')
                     r.write("------------------------\n")
                     r.write(f"{x}\n")
@@ -32,7 +32,7 @@ if os.path.exists(file):
             for x in codes:
                 driver.get(f"{site}{x}")
                 e = driver.title
-                if driver.title.lower() == response:
+                if f"{response} in f"{driver.title.lower()}":
                     r = open('valid.txt', 'a')
                     r.write("------------------------\n")
                     r.write(f"{site}{x}\n")
